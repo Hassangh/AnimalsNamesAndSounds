@@ -1,0 +1,43 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AnimalsNamesAndSounds.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Name="ApplicationName" Text="ANIMALS' NAMES AND SOUNDS" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Name="PageName" Text="lion" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <MediaElement x:Name="LionRoar" Source="/Sounds/Lion.mp3" AutoPlay="False" Visibility="Collapsed"></MediaElement>
+            <MediaElement x:Name="Lion_Pro" Source="/Sounds/Lion_Pro.mp3" AutoPlay="False" Visibility="Collapsed"></MediaElement>
+        </StackPanel>
+    <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="5,0,5,0">
+            <Grid.Background>
+                <ImageBrush Stretch="None" ImageSource="/Images/Lion.jpg"></ImageBrush>
+            </Grid.Background>
+        </Grid>
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsMenuEnabled="True" IsVisible="True">
+            <shell:ApplicationBarIconButton Click="Back_Click"  IconUri="/Images/back.png" Text="Back"></shell:ApplicationBarIconButton>
+            <shell:ApplicationBarIconButton Click="What_Click" IconUri="/Images/questionmark.png" Text="What?"></shell:ApplicationBarIconButton>
+            <shell:ApplicationBarIconButton Click="Sound_Click" IconUri="/Images/play.png" Text="Sound"></shell:ApplicationBarIconButton>
+            <shell:ApplicationBarIconButton Click="Next_Click" IconUri="/Images/next.png" Text="Next"></shell:ApplicationBarIconButton>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</phone:PhoneApplicationPage>

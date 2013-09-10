@@ -1,0 +1,58 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="AnimalsNamesAndSounds.Quiz"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Chocolate">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="ANIMALS' NAMES AND SOUNDS" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="quiz" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <Popup Name="popupMessage" IsOpen="False" Visibility="Visible" Margin="0,0,0,0">
+                <StackPanel Width="455" HorizontalAlignment="Center" Background="DarkBlue">
+                    <TextBlock Name="tbChild" Text="RIGHT ANSWER!!" FontSize="50" Margin="0,10,0,10" FontFamily="Buxton Sketch" TextAlignment="Center"/>
+                    <TextBlock Name="tbScore" Text="Your score is : " HorizontalAlignment="Center" Margin="0,0,0,20"></TextBlock>
+                    <Image Name="imChild" Source="/Images/51.png" Width="200" Stretch="Fill"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Content="Restart" Click="RestartQuiz_Click" Width="200"></Button>
+                        <Button Name="bNext" Content="Next" Click="NextQuestion_Click" Width="200"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </Popup>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Image Name="Img1" Tap="Img1_Tap_1" Source="/Images/5.jpg" Width="150" Margin="50,0,0,0" Height="250" VerticalAlignment="Top" HorizontalAlignment="Left"></Image>
+            <Image Name="Img2" Tap="Img2_Tap_1" Source="/Images/8.jpg" Width="150" Height="250" Margin="0,0,50,0" VerticalAlignment="Top" HorizontalAlignment="Right"></Image>
+            <Image Name="Img3" Tap="Img3_Tap_1" Source="/Images/12.jpg" Width="150" Height="250" Margin="50,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left"></Image>
+            <Image Name="Img4" Tap="Img4_Tap_1" Source="/Images/18.jpg" Width="150" Height="250" Margin="0,0,50,10" VerticalAlignment="Bottom" HorizontalAlignment="Right"></Image>
+            <MediaElement Name="GuessSound" Source="/Sounds/1.wav" Visibility="Collapsed"></MediaElement>
+            <MediaElement Name="RightWrong" MediaOpened="RightWrong_Started" Visibility="Collapsed"></MediaElement>
+        </Grid>
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsMenuEnabled="True" IsVisible="True">
+            <shell:ApplicationBarIconButton Click="Sound_Click" IconUri="/Images/play.png" Text="Play again"></shell:ApplicationBarIconButton>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="about" Click="About_Click"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</phone:PhoneApplicationPage>
