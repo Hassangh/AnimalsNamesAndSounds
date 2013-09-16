@@ -32,8 +32,7 @@
                 <Bold>ANIMALS' NAMES AND SOUNDS</Bold> is developed for kids for the purpose of learning alphbets as well as getting
                 familiar with animals names and their voices.
             </TextBlock>
-            <Button Height="90" VerticalAlignment="Bottom" Margin="0,0,0,80">Rate this App</Button>
-            <Button Height="90" VerticalAlignment="Bottom">Get more Apps</Button>
+            <Button Name="bRateApp" Height="90" VerticalAlignment="Bottom" Margin="0,0,0,10" Click="bRateApp_Click">Rate this App</Button>
         </Grid>
     </Grid>
 

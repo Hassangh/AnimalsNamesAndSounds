@@ -7,6 +7,7 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using Microsoft.Phone.Tasks;
 
 namespace AnimalsNamesAndSounds
 {
@@ -15,6 +16,12 @@ namespace AnimalsNamesAndSounds
         public About()
         {
             InitializeComponent();
+        }
+
+        private void bRateApp_Click(object sender, RoutedEventArgs e)
+        {
+            MarketplaceReviewTask marketplaceReviewTask = new MarketplaceReviewTask();
+            marketplaceReviewTask.Show();
         }
     }
 }
