@@ -20,104 +20,116 @@
         <MediaElement Name="Sound" Visibility="Collapsed"></MediaElement>
         <phone:Pivot Name="Pivot_Animal" SelectionChanged="SelectionChanged_Click" Title="ANIMALS' NAMES AND SOUNDS" FontFamily="Calibri" Background="Chocolate" Foreground="White">
             <!--Pivot item one-->
-            <phone:PivotItem Header="Ape">
+            <phone:PivotItem Header="        Ape        ">
                 <Image x:Name="Ape" Margin="0,0,0,0" Source="/Images/1.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Bear">
+            <phone:PivotItem Header="        Bear        ">
                 <Image x:Name="Bear" Margin="0,0,0,0" Source="/Images/2.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Cat">
+            <phone:PivotItem Header="        Cat         ">
                 <Image x:Name="Cat" Margin="0,0,0,0" Source="/Images/3.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Deer">
+            <phone:PivotItem Header="       Deer        ">
                 <Image x:Name="Deer" Margin="0,0,0,0" Source="/Images/4.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Elephant">
+            <phone:PivotItem Header="    Elephant     ">
                 <Image x:Name="Elephant" Margin="0,0,0,0" Source="/Images/5.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Frog">
+            <phone:PivotItem Header="       Frog       ">
                 <Image x:Name="Frog" Margin="0,0,0,0" Source="/Images/6.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Goat">
+            <phone:PivotItem Header="       Goat        ">
                 <Image x:Name="Goat" Margin="0,0,0,0" Source="/Images/7.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Horse">
+            <phone:PivotItem Header="      Horse       ">
                 <Image x:Name="Horse" Margin="0,0,0,0" Source="/Images/8.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Ibis">
+            <phone:PivotItem Header="        Ibis         ">
                 <Image x:Name="Ibis" Margin="0,0,0,0" Source="/Images/9.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Jaguar">
+            <phone:PivotItem Header="      Jaguar      ">
                 <Image x:Name="Jaguar" Margin="0,0,0,0" Source="/Images/10.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Kangaroo">
+            <phone:PivotItem Header="    Kangaroo   ">
                 <Image x:Name="Kangaroo" Margin="0,0,0,0" Source="/Images/11.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Lion">
+            <phone:PivotItem Header="        Lion        ">
                 <Image x:Name="Lion" Margin="0,0,0,0" Source="/Images/12.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Monkey">
+            <phone:PivotItem Header="    Monkey      ">
                 <Image x:Name="Monkey" Margin="0,0,0,0" Source="/Images/13.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Nightingale">
+            <phone:PivotItem Header="   Nightingale ">
                 <Image x:Name="Nightingale" Margin="0,0,0,0" Source="/Images/14.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Ostrich">
+            <phone:PivotItem Header="      Ostrich     ">
                 <Image x:Name="Ostrich" Margin="0,0,0,0" Source="/Images/15.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Penguin">
+            <phone:PivotItem Header="    Penguin      ">
                 <Image x:Name="Penguin" Margin="0,0,0,0" Source="/Images/16.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Quail">
+            <phone:PivotItem Header="      Quail        ">
                 <Image x:Name="Quail" Margin="0,0,0,0" Source="/Images/17.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Rabbit">
+            <phone:PivotItem Header="     Rabbit       ">
                 <Image x:Name="Rabbit" Margin="0,0,0,0" Source="/Images/18.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Snake">
+            <phone:PivotItem Header="      Snake       ">
                 <Image x:Name="Snake" Margin="0,0,0,0" Source="/Images/19.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Tiger">
+            <phone:PivotItem Header="       Tiger       ">
                 <Image x:Name="Tiger" Margin="0,0,0,0" Source="/Images/20.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="UmbrellaBird">
+            <phone:PivotItem Header=" UmbrellaBird ">
                 <Image x:Name="UmbrellaBird" Margin="0,0,0,0" Source="/Images/21.jpg"></Image>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Vulture">
-                <Image x:Name="Vulture" Margin="0,0,0,0" Source="/Images/22.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,-70,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Vulture" Margin="0,0,0,0" Height="630" Source="/Images/22.jpg"></Image>
+                    <TextBlock Name="tbVulture" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Wolf">
-                <Image x:Name="Wolf" Margin="0,0,0,0" Source="/Images/23.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,-70,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Wolf" Margin="0,0,0,0" Source="/Images/23.jpg"></Image>
+                    <TextBlock FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Arial" Text="Wolf"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Yak">
-                <Image x:Name="Yak" Margin="0,0,0,0" Source="/Images/24.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,-70,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Yak" Margin="0,0,0,0" Source="/Images/24.jpg"></Image>
+                    <TextBlock FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center">Yak</TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="Zebra">
-                <Image x:Name="Zebra" Margin="0,0,0,0" Source="/Images/25.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,-70,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Zebra" Margin="0,0,0,0" Source="/Images/25.jpg"></Image>
+                    <TextBlock FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center">Zebra</TextBlock>
+                </StackPanel>
             </phone:PivotItem>
         </phone:Pivot>
     </Grid>
