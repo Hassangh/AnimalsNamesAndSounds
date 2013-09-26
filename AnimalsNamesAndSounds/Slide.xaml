@@ -14,121 +14,189 @@
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="Chocolate">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock FontSize="30" HorizontalAlignment="Center">Loading</TextBlock>
+            <ProgressBar Name="pbLoad" IsIndeterminate="False" Foreground="DarkBlue"></ProgressBar>
+        </StackPanel>
         <!--Pivot Control-->
         <MediaElement Name="Name" Visibility="Collapsed" MediaEnded="Name_Finished"></MediaElement>
         <MediaElement Name="Sound" Visibility="Collapsed"></MediaElement>
-        <phone:Pivot Name="Pivot_Animal" SelectionChanged="SelectionChanged_Click" Title="ANIMALS' NAMES AND SOUNDS" FontFamily="Calibri" Background="Chocolate" Foreground="White">
+        <phone:Pivot Name="Pivot_Animal" SelectionChanged="SelectionChanged_Click" Title="ANIMALS' NAMES AND SOUNDS" FontFamily="Calibri" Foreground="White">
+
             <!--Pivot item one-->
-            <phone:PivotItem Header="        Ape        ">
-                <Image x:Name="Ape" Margin="0,0,0,0" Source="/Images/1.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Ape" Margin="0,0,0,0" Height="630" Source="/Images/1.jpg"></Image>
+                    <TextBlock Name="tb0" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="        Bear        ">
-                <Image x:Name="Bear" Margin="0,0,0,0" Source="/Images/2.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Bear" Margin="0,0,0,0" Height="630" Source="/Images/2.jpg"></Image>
+                    <TextBlock Name="tb1" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="        Cat         ">
-                <Image x:Name="Cat" Margin="0,0,0,0" Source="/Images/3.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Cat" Margin="0,0,0,0" Height="630" Source="/Images/3.jpg"></Image>
+                    <TextBlock Name="tb2" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="       Deer        ">
-                <Image x:Name="Deer" Margin="0,0,0,0" Source="/Images/4.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Deer" Margin="0,0,0,0" Height="630" Source="/Images/4.jpg"></Image>
+                    <TextBlock Name="tb3" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="    Elephant     ">
-                <Image x:Name="Elephant" Margin="0,0,0,0" Source="/Images/5.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Elephant" Margin="0,0,0,0" Height="630" Source="/Images/5.jpg"></Image>
+                    <TextBlock Name="tb4" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="       Frog       ">
-                <Image x:Name="Frog" Margin="0,0,0,0" Source="/Images/6.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Frog" Margin="0,0,0,0" Height="630" Source="/Images/6.jpg"></Image>
+                    <TextBlock Name="tb5" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="       Goat        ">
-                <Image x:Name="Goat" Margin="0,0,0,0" Source="/Images/7.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Goat" Margin="0,0,0,0" Height="630" Source="/Images/7.jpg"></Image>
+                    <TextBlock Name="tb6" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="      Horse       ">
-                <Image x:Name="Horse" Margin="0,0,0,0" Source="/Images/8.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Horse" Margin="0,0,0,0" Height="630" Source="/Images/8.jpg"></Image>
+                    <TextBlock Name="tb7" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="        Ibis         ">
-                <Image x:Name="Ibis" Margin="0,0,0,0" Source="/Images/9.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Ibis" Margin="0,0,0,0" Height="630" Source="/Images/9.jpg"></Image>
+                    <TextBlock Name="tb8" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="      Jaguar      ">
-                <Image x:Name="Jaguar" Margin="0,0,0,0" Source="/Images/10.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Jaguar" Margin="0,0,0,0" Height="630" Source="/Images/10.jpg"></Image>
+                    <TextBlock Name="tb9" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="    Kangaroo   ">
-                <Image x:Name="Kangaroo" Margin="0,0,0,0" Source="/Images/11.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Kangaroo" Margin="0,0,0,0" Height="630" Source="/Images/11.jpg"></Image>
+                    <TextBlock Name="tb10" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="        Lion        ">
-                <Image x:Name="Lion" Margin="0,0,0,0" Source="/Images/12.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Lion" Margin="0,0,0,0" Height="630" Source="/Images/12.jpg"></Image>
+                    <TextBlock Name="tb11" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="    Monkey      ">
-                <Image x:Name="Monkey" Margin="0,0,0,0" Source="/Images/13.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Monkey" Margin="0,0,0,0" Height="630" Source="/Images/13.jpg"></Image>
+                    <TextBlock Name="tb12" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="   Nightingale ">
-                <Image x:Name="Nightingale" Margin="0,0,0,0" Source="/Images/14.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Nightangle" Margin="0,0,0,0" Height="630" Source="/Images/14.jpg"></Image>
+                    <TextBlock Name="tb13" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="      Ostrich     ">
-                <Image x:Name="Ostrich" Margin="0,0,0,0" Source="/Images/15.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Ostrich" Margin="0,0,0,0" Height="630" Source="/Images/15.jpg"></Image>
+                    <TextBlock Name="tb14" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="    Penguin      ">
-                <Image x:Name="Penguin" Margin="0,0,0,0" Source="/Images/16.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Penguin" Margin="0,0,0,0" Height="630" Source="/Images/16.jpg"></Image>
+                    <TextBlock Name="tb15" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="      Quail        ">
-                <Image x:Name="Quail" Margin="0,0,0,0" Source="/Images/17.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Quail" Margin="0,0,0,0" Height="630" Source="/Images/17.jpg"></Image>
+                    <TextBlock Name="tb16" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="     Rabbit       ">
-                <Image x:Name="Rabbit" Margin="0,0,0,0" Source="/Images/18.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Rabbit" Margin="0,0,0,0" Height="630" Source="/Images/18.jpg"></Image>
+                    <TextBlock Name="tb17" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="      Snake       ">
-                <Image x:Name="Snake" Margin="0,0,0,0" Source="/Images/19.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Snake" Margin="0,0,0,0" Height="630" Source="/Images/19.jpg"></Image>
+                    <TextBlock Name="tb18" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header="       Tiger       ">
-                <Image x:Name="Tiger" Margin="0,0,0,0" Source="/Images/20.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="Tiger" Margin="0,0,0,0" Height="630" Source="/Images/20.jpg"></Image>
+                    <TextBlock Name="tb19" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Header=" UmbrellaBird ">
-                <Image x:Name="UmbrellaBird" Margin="0,0,0,0" Source="/Images/21.jpg"></Image>
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
+                <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
+                    <Image x:Name="UmbrellaBird" Width="400" Margin="0,0,0,0" Height="630" Source="/Images/21.jpg"></Image>
+                    <TextBlock Name="tb20" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Height="700" Margin="0,-70,0,0" HorizontalAlignment="Center">
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
                 <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
                     <Image x:Name="Vulture" Margin="0,0,0,0" Height="630" Source="/Images/22.jpg"></Image>
-                    <TextBlock Name="tbVulture" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
+                    <TextBlock Name="tb21" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
                 </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Height="700" Margin="0,-70,0,0" HorizontalAlignment="Center">
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
                 <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
                     <Image x:Name="Wolf" Margin="0,0,0,0" Source="/Images/23.jpg"></Image>
-                    <TextBlock FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Arial" Text="Wolf"></TextBlock>
+                    <TextBlock Name="tb22" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
                 </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Height="700" Margin="0,-70,0,0" HorizontalAlignment="Center">
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
                 <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
                     <Image x:Name="Yak" Margin="0,0,0,0" Source="/Images/24.jpg"></Image>
-                    <TextBlock FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center">Yak</TextBlock>
+                    <TextBlock Name="tb23" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
                 </StackPanel>
             </phone:PivotItem>
 
-            <phone:PivotItem Height="700" Margin="0,-70,0,0" HorizontalAlignment="Center">
+            <phone:PivotItem Height="700" Margin="0,25,0,0" HorizontalAlignment="Center">
                 <StackPanel Background="DarkBlue" Orientation="Horizontal" Margin="0,0,0,70">
                     <Image x:Name="Zebra" Margin="0,0,0,0" Source="/Images/25.jpg"></Image>
-                    <TextBlock FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center">Zebra</TextBlock>
+                    <TextBlock Name="tb24" FontSize="100" Width="80" VerticalAlignment="Center" TextWrapping="Wrap" FontFamily="Calibri" TextAlignment="Center"></TextBlock>
                 </StackPanel>
             </phone:PivotItem>
         </phone:Pivot>

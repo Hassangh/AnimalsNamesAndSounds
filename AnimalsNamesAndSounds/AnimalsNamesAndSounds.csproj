@@ -190,6 +190,7 @@
     <Content Include="Images\54.png" />
     <Content Include="Images\53.png" />
     <Content Include="Images\52.png" />
+    <Resource Include="Images\loading.gif" />
     <Content Include="Images\next.png" />
     <Content Include="Images\14.jpg" />
     <Content Include="Images\15.jpg" />
@@ -264,6 +265,15 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="ImageTools">
+      <HintPath>.\ImageTools.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.Controls">
+      <HintPath>.\ImageTools.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageTools.IO.Gif">
+      <HintPath>.\ImageTools.IO.Gif.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
